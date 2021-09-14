@@ -1,0 +1,141 @@
+/*=======================================MASTER=========================================*/
+body{
+    font-weight: 400;
+}
+
+a{
+    color: #FFFFFF;
+    transition: .3s all;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: .3s all;
+}
+/*======================================================================================*/
+
+
+/*=======================================SUPPORT========================================*/
+%slider-full{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+%image-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/*======================================================================================*/
+
+
+/*=======================================HEADER=========================================*/
+.header{
+
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.menu{
+
+    &__list{
+        display: flex;
+    }
+
+    &__list-link{
+        text-transform: uppercase;
+    }
+}
+
+.logo{
+    display: inline-block;
+}
+
+.burger{
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    display: none;
+
+    @media(max-width: 768px) {
+        display: block;
+        right: 15px;
+    }
+}
+
+.burger-line{
+    width: 35px;
+    height: 3px;
+    background: #FFFFFF;
+    position: absolute;
+    transition: .3s all;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 4px;
+
+    &::after,
+    &::before{
+        content: "";
+        position: absolute;
+        height: 3px;
+        transition: .3s all;
+        border-radius: 4px;
+    }
+
+    &::after{
+        top: -8px;
+        background: #FFFFFF;
+        width: 35px;
+    }
+
+    &::before{
+        top: 8px;
+        background: #FFFFFF;
+        width: 35px;
+    }
+
+}
+
+.burger.active{
+    .burger-line {
+        width: 35px;
+        transform: translateX(-50%);
+        background-color: transparent;
+
+        &::after{
+            transform: rotate(-45deg) translate(8px, 17px);
+        }
+    
+        &::before{
+            transform: rotate(45deg) translate(5px, -20px);
+        }
+        
+    }
+}
+/*======================================================================================*/
+
+
+/*========================================FOOTER========================================*/
+.footer{
+
+    &__copyright{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+/*======================================================================================*/
