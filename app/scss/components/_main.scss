@@ -109,6 +109,7 @@
 /*======================================TEMPERATURE=====================================*/
 .temperature{
     padding-top: 90px;
+    padding-bottom: 90px;
     position: relative;
 
     &__content{
@@ -158,6 +159,41 @@
 /*======================================================================================*/
 
 
-/*=========================================MAIN=========================================*/
+/*=======================================VORTEILE=======================================*/
+.vorteile{
+    padding-top: 75px;
+    padding-bottom: 57px;
 
+    &__column{
+        padding: 4px !important;
+    }
+
+    &__title{
+        @extend %title;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: 4.42px;
+        padding-bottom: 38px;
+    }
+
+    &__item{
+        height: 136px;
+        margin-bottom: 0 !important;
+
+        &-info{
+            @extend %text;
+            font-size: 19px;
+            line-height: 32px;
+            color: $gray-700;
+            max-width: 248px;
+            margin: 0;
+        }
+
+        &-image{
+            margin-left: 15px;
+            margin-right: 24px;
+        }
+    }
+}
 /*======================================================================================*/
