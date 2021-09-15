@@ -1,13 +1,47 @@
+@import '../modules/bootstrapCustom';
 /*=========================================MAIN=========================================*/
+.menu{
 
-/*======================================================================================*/
+    li{
 
+        a{
+            color: $gray-700 !important;
+            @extend %text;
+        }
+    }
+}
 
-/*=========================================MENU=========================================*/
+.nav-link{
+    border: 2px solid transparent;
+    &:hover{
+        color: $blue-thin !important;
+    }
+}
 
-/*======================================================================================*/
+.nav-item + .nav-item{
+    padding-left: 0.875rem;
+}
 
+.dropdown-toggle::after {
+    display: none !important;
+}
 
-/*========================================CONTENT=======================================*/
+.dropdown-toggle{
+    border-radius: 8px;
+    img{
+        display: inline-block;
+        margin-left: 7px;
+        padding-bottom: 2px;
+        transition: .15s all ease-in-out;
+    }
+}
 
+.dropdown-toggle.show{
+    border-color: #EAEDF5;
+    color: $blue-thin !important;
+
+    img{
+        filter: invert(44%) sepia(82%) saturate(4870%) hue-rotate(213deg) brightness(104%) contrast(102%);
+    }
+}
 /*======================================================================================*/
