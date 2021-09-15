@@ -23,6 +23,7 @@
             line-height: 32px;
             max-width: 500px;
             margin-top: 50px;
+            color: $black;
         }
 
         &-desc.second-desc{
@@ -30,9 +31,11 @@
             line-height: 32px;
             max-width: 477px;
             margin-top: 23px;
+            color: $gray-700;
 
             span{
                 font-weight: 700;
+                color: $black;
             }
         }
         
@@ -100,4 +103,61 @@
         }
     }
 }
+/*======================================================================================*/
+
+
+/*======================================TEMPERATURE=====================================*/
+.temperature{
+    padding-top: 90px;
+    position: relative;
+
+    &__content{
+
+        &-block{
+            max-width: 580px;
+        }
+
+        &-title{
+            @extend %title;
+            line-height: 40px;
+            letter-spacing: 2.42px;
+            text-transform: uppercase;
+            color: $blue-light;
+            padding-bottom: 15px;
+
+            p{
+                margin-bottom: 0;
+            }
+        }
+
+        &-info{
+            @extend %text;
+            color: $gray-700;
+            line-height: 32px;
+        }
+
+        &-text{
+            span{
+                color: $black;
+                font-weight: 700;
+            }
+
+            &:nth-child(1) {
+                padding-bottom: 20px;
+            }
+        }
+    }
+
+    &__image{
+        position: absolute;
+        top: 0;
+        right: -20%;
+        z-index: -1;
+    }
+}
+/*======================================================================================*/
+
+
+/*=========================================MAIN=========================================*/
+
 /*======================================================================================*/
