@@ -10,6 +10,7 @@
             @extend %title;
             font-size: 48px;
             color: $blue-light;
+            letter-spacing: 2.42px;
         }
 
         &-title.half{
@@ -60,6 +61,43 @@
 /*======================================================================================*/
 
 
-/*========================================SLIDER========================================*/
+/*=======================================STANDARTS======================================*/
+.standarts{
+    background: linear-gradient(180deg, $blue 0%, $blue-dark 100%);
 
+    &__content{
+
+        &-column{
+            &:nth-child(1) {
+                padding-left: 0 !important;
+            }
+            &:nth-child(2) {
+                padding-right: 0 !important;
+            }
+        }
+
+        &-title{
+            @extend %title;
+            line-height: 40px;
+            letter-spacing: 2.42px;
+            color: #FBFDFF;
+            padding-bottom: 14px;
+        }
+
+        &-desc{
+            @extend %text;
+            font-weight: 400;
+            line-height: 32px;
+            color: #FBFDFF;
+
+            span{
+                font-weight: 700;
+            }
+        }
+
+        &-text:nth-child(1) {
+            padding-bottom: 34px;
+        }
+    }
+}
 /*======================================================================================*/
