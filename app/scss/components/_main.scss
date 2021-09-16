@@ -1,8 +1,13 @@
 @import '../modules/bootstrapCustom';
+@import '../../../node_modules/bootstrap/scss/mixins';
 /*=====================================TOP SECTION======================================*/
 .top{
     position: relative;
     padding-top: 65px;
+
+    @include media-breakpoint-down(md) {
+        padding-top: 20px;
+    }
 
     &__content{
 
@@ -11,10 +16,28 @@
             font-size: 48px;
             color: $blue-light;
             letter-spacing: 2.42px;
+            
+            @include media-breakpoint-down(lg) {
+                letter-spacing: -0.4px;
+                font-size: 34px;
+            }
+
+            @include media-breakpoint-down(md) {
+                text-align: center;
+            }
         }
 
         &-title.half{
             font-size: 20px;
+
+            @include media-breakpoint-down(lg) {
+                font-size: 18px;
+            }
+
+            @include media-breakpoint-down(sm) {
+                max-width: 220px;
+                margin: 0 auto;
+            }
         }
 
         &-desc{
@@ -24,6 +47,22 @@
             max-width: 500px;
             margin-top: 50px;
             color: $black;
+
+            @include media-breakpoint-down(lg) {
+                letter-spacing: -0.4px;
+                font-size: 16px;
+                margin-top: 25px;
+            }
+
+            @include media-breakpoint-down(md) {
+                text-align: center;
+            }
+
+            @include media-breakpoint-down(sm) {
+                max-width: 344px;
+                text-align: left;
+                margin: 0 auto;
+            }
         }
 
         &-desc.second-desc{
@@ -38,20 +77,67 @@
                 color: $black;
             }
         }
+
+        &-img{
+            @include media-breakpoint-down(lg) {
+                margin-top: 150px;
+            }
+            @include media-breakpoint-down(md) {
+                margin-top: 0;
+            }
+        }
         
         &-img.half-img{
             margin-left: 40px;
+
+            @include media-breakpoint-down(lg) {
+                margin-top: 0px;
+            }
+
+            @include media-breakpoint-down(md) {
+                display: none;
+            }
+
+            @include media-breakpoint-down(sm) {
+                margin: 0 auto;
+                margin-left: 10px;
+            }
+        }
+
+        &-img576{
+            display: none;
+            @include media-breakpoint-down(md) {
+                display: block !important;
+            }
         }
 
         &-paragraph{
+
+            @include media-breakpoint-down(md) {
+                max-width: 400px;
+                margin: 0 auto;
+                text-align: left;
+            }
+
             &:nth-child(1) {
                 padding-bottom: 45px;
+
+                @include media-breakpoint-down(md) {
+                    padding-bottom: 24px;
+                }
             }
         }
     }
 
     &__content-block.second-block{
         max-width: 477px;
+
+        @include media-breakpoint-down(sm) {
+            max-width: 400px;
+            margin: 0 auto !important;
+            padding-top: 0 !important;
+            text-align: left;
+        }
     }
 }
 
@@ -60,6 +146,21 @@
     width: 227px;
     background-color: $gray-200;
     margin-top: 52px;
+
+    @include media-breakpoint-down(lg) {
+        margin-top: 40px;
+    }
+
+    @include media-breakpoint-down(md) {
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+}
+
+.hide-line{
+    @include media-breakpoint-down(md) {
+        display: none;
+    }
 }
 /*======================================================================================*/
 
