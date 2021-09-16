@@ -127,10 +127,20 @@
                 }
             }
         }
+
+        &-second.pt-3{
+            @include media-breakpoint-down(md) {
+                padding-bottom: 26px !important;
+            }
+        }
     }
 
     &__content-block.second-block{
         max-width: 477px;
+
+        @include media-breakpoint-down(md) {
+            margin: 0 auto;
+        }
 
         @include media-breakpoint-down(sm) {
             max-width: 400px;
@@ -171,12 +181,31 @@
 
     &__content{
 
+        @include media-breakpoint-down(md) {
+           flex-direction: column;
+        }
+
+
         &-column{
             &:nth-child(1) {
                 padding-left: 0 !important;
+
+                @include media-breakpoint-down(md) {
+                    width: 100%;
+                    padding-right: 0 !important;
+                }
             }
             &:nth-child(2) {
                 padding-right: 0 !important;
+
+                @include media-breakpoint-down(xl) {
+                    width: 50%;
+                }
+
+                @include media-breakpoint-down(md) {
+                    width: 100%;
+                    padding-left: 0 !important;
+                }
             }
         }
 
@@ -186,6 +215,15 @@
             letter-spacing: 2.42px;
             color: #FBFDFF;
             padding-bottom: 14px;
+
+            @include media-breakpoint-down(xl) {
+                font-size: 18px;
+            }
+
+            @include media-breakpoint-down(lg) {
+                font-size: 18px;
+                margin: 0 !important;
+            }
         }
 
         &-desc{
@@ -197,10 +235,42 @@
             span{
                 font-weight: 700;
             }
+
+            @include media-breakpoint-down(xl) {
+                max-width: 500px;
+                font-size: 16px;
+                letter-spacing: -0.4px;
+            }
+
         }
 
         &-text:nth-child(1) {
             padding-bottom: 34px;
+
+            @include media-breakpoint-down(xl) {
+                padding-bottom: 0;
+            }
+
+            @include media-breakpoint-down(md) {
+                padding-bottom: 34px;
+            }
+        }
+
+        &-img{
+            @include media-breakpoint-down(md) {
+                width: 800px;
+            }
+        }
+
+        &-block{
+            @include media-breakpoint-down(md) {
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+            @include media-breakpoint-down(sm) {
+                max-width: 344px;
+            }
         }
     }
 }
