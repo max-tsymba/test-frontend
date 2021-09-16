@@ -275,6 +275,7 @@
         padding-bottom: 35px;
     }
 
+    // Carousel
     &__item{
         img{
             margin: 0 auto;
@@ -313,5 +314,33 @@
     &__dots.active{
         border-color: #BED8FF !important;
     }
+    // =====
+
+    &__subtitle{
+        @extend %title;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: 2.42px;
+        color: $black;
+        margin-top: 78px !important;
+        padding-bottom: 35px;
+    }
+
+    &__alert{
+        color: #FAFBFE;
+        border-radius: 12px !important;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.21) !important;
+        margin-bottom: 0 !important;
+        @extend %title;
+        font-size: 17px;
+        letter-spacing: 1.42px;
+        text-transform: uppercase;
+    }
+
+    &__column{
+        padding: 4px !important;
+    }
+
 }
 /*======================================================================================*/
