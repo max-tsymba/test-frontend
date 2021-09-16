@@ -1,4 +1,5 @@
 @import '../modules/bootstrapCustom';
+@import '../../../node_modules/bootstrap/scss/mixins';
 /*=========================================MENU=========================================*/
 .menu{
 
@@ -18,8 +19,16 @@
     }
 }
 
+.burger{
+    border: none !important;
+}
+
 .nav-item + .nav-item{
     padding-left: 0.875rem;
+
+    @include media-breakpoint-down(xl) {
+        padding-left: 0;
+    }
 }
 
 .dropdown-toggle::after {
