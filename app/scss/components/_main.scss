@@ -260,6 +260,58 @@
 
 /*======================================================================================*/
 
-/*=========================================MAIN=========================================*/
+/*========================================BILDER========================================*/
+.bilder{
+    padding-top: 74px;
+    padding-bottom: 74px;
 
+    &__title{
+        @extend %title;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: 4.42px;
+        text-transform: uppercase;
+        padding-bottom: 35px;
+    }
+
+    &__item{
+        img{
+            margin: 0 auto;
+        }
+    }
+
+    &__nav{
+        margin-top: 30px !important;
+        width: 610px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    &__btn{
+        box-shadow: 0px 0px 21px rgba(64, 68, 75, 0.14);
+    }
+
+    &__btn + .bilder__btn{
+        margin-left: 18px !important;
+    }
+
+    &__indicators{
+        top: 0;
+        left: 20% !important;
+    }
+
+    &__dots{
+        border: 1px solid #0045AC !important;
+        border-radius: 50% !important;
+    }
+
+    &__dots + .bilder__dots{
+        margin-left: 26px !important;
+    }
+
+    &__dots.active{
+        border-color: #BED8FF !important;
+    }
+}
 /*======================================================================================*/
