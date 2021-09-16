@@ -1,5 +1,44 @@
+@import '../modules/bootstrapCustom';
 /*=========================================MAIN=========================================*/
+.footer{
+    padding: 50px 0;
 
+    &__item {
+
+        &-title{
+            @extend %text;
+            font-weight: 700;
+            color: #A3ADBA;
+            line-height: 32px;
+            letter-spacing: -0.4px;
+            padding-bottom: 10px;
+        }
+
+        &-info{
+            @extend %text;
+            line-height: 20px;
+            letter-spacing: -0.4px;
+            color: #9EABBB;
+
+            &_tel{
+                @extend %text;
+                color: $gray-700;
+                text-decoration: none;
+            }
+
+            &_email{
+                @extend %text;
+                color: $blue-light;
+                text-decoration: none;
+            }
+
+            &_shortlinks{
+                @extend %text;
+                color: #9EABBB;
+            }
+        }
+    }
+}
 /*======================================================================================*/
 
 
