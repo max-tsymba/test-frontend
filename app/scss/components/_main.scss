@@ -470,11 +470,25 @@
 /*====================================Hauptmerkmale=====================================*/
 .hauptmerkmale{
 
+    .col-6{
+        @include media-breakpoint-down(md){
+            width: 100% !important;
+        }
+    }
+
     &__block{
         margin-bottom: 0 !important;
         box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
         padding-left: 54px !important;
         padding-right: 54px !important;
+        width: 99% !important;
+        margin: 0 auto;
+
+        @include media-breakpoint-down(md){
+            width: 98% !important;
+            padding-left: 16px !important;
+            padding-right: 16px !important;
+        }
 
         &-title{
             @extend %title;
@@ -485,6 +499,16 @@
             letter-spacing: 4.42px;
             text-transform: uppercase;
             padding-bottom: 62px;
+
+            @include media-breakpoint-down(lg){
+                text-align: center;
+            }
+
+            @include media-breakpoint-down(md){
+                font-size: 20px;
+                padding-top: 10px;
+                padding-bottom: 30px;
+            }
 
         }
 
@@ -518,10 +542,20 @@
                 font-weight: 700;
                 color: $black;
             }
+
+            @include media-breakpoint-down(md){
+                font-size: 16px;
+            }
         }
 
         &-item{
             padding-bottom: 50px;
+
+            &:last-child {
+                @include media-breakpoint-down(md){
+                   padding-bottom: 0;
+                }
+            }
         }
     }
 }
