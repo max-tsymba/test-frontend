@@ -180,6 +180,7 @@
     &__item{
         height: 136px;
         margin-bottom: 0 !important;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
 
         &-info{
             @extend %text;
@@ -196,4 +197,69 @@
         }
     }
 }
+/*======================================================================================*/
+
+
+/*====================================Hauptmerkmale=====================================*/
+.hauptmerkmale{
+
+    &__block{
+        margin-bottom: 0 !important;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+        padding-left: 54px !important;
+        padding-right: 54px !important;
+
+        &-title{
+            @extend %title;
+            color: $black;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 40px;
+            letter-spacing: 4.42px;
+            text-transform: uppercase;
+            padding-bottom: 62px;
+        }
+
+        &-number{
+            @extend %text;
+            font-weight: 700;
+            font-size: 9px;
+            line-height: 12px;
+            letter-spacing: -0.4px;
+            color: $gray-700;
+            border: 2px solid $gray-700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            height: 17px;
+            width: 17px;
+            margin-right: 17px;
+            margin-top: 10px;
+        }
+
+        &-info{
+            @extend %text;
+            line-height: 35px;
+            margin: 0 !important;
+            letter-spacing: -0.4px;
+            color: $gray-700;
+            max-width: 455px;
+
+            span{
+                font-weight: 700;
+                color: $black;
+            }
+        }
+
+        &-item{
+            padding-bottom: 50px;
+        }
+    }
+}
+
+/*======================================================================================*/
+
+/*=========================================MAIN=========================================*/
+
 /*======================================================================================*/
