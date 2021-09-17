@@ -1,0 +1,75 @@
+/*========================================COLORS========================================*/
+// My Theme
+$blue-thin: #2E75FF;
+$blue-light:#1652AC;
+$blue:      #163DA2;
+$blue-dark: #003584;
+
+
+// White & Gray
+$white:    #fff;
+$gray-100: #FBFBFC;
+$gray-200: #EDEFF3;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #45494F;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #020303;
+
+
+// Defaults
+$primary:       $white;
+$secondary:     $gray-100;
+$info:          #004FC7;
+// $gradient: linear-gradient(180deg, #0C5CD6 0%, rgba(0, 56, 140, 0) 100%), #004FC7;
+
+// Container
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 800px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 980px,
+  xl: 1140px,
+  xxl: 1200px
+);
+
+// Navbar
+$navbar-padding-y: 0.125rem;
+$nav-link-padding-y: 0.25rem;
+
+
+// Shadows
+$box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
+$box-shadow-sm:               0 -0.063rem 0.625rem rgba($black, .1);
+$box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
+$box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
+
+// Alert
+$alert-border-radius:           16px;
+$alert-padding-x:               24px;
+
+
+// Buttons
+$btn-border-radius:           8px;
+$btn-padding-y:               19px;
+$btn-padding-x:               42px;
+
+
+// Carousel
+$carousel-indicator-width:           12px;
+$carousel-indicator-height:          12px;
+$carousel-indicator-opacity:         0.35;
+$carousel-indicator-active-bg:       #004FC7;
+
+/*======================================================================================*/

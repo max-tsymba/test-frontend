@@ -1,0 +1,31 @@
+/*=======================================MASTER=========================================*/
+body{
+    font-weight: 400;
+}
+
+a{
+    color: #FFFFFF;
+    transition: .3s all;
+}
+
+button{
+    cursor: pointer;
+    transition: .3s all;
+}
+/*======================================================================================*/
+
+
+/*=======================================SUPPORT========================================*/
+%slider-full{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+%image-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/*======================================================================================*/

@@ -1,0 +1,81 @@
+@import '../modules/bootstrapCustom';
+@import '../../../node_modules/bootstrap/scss/mixins';
+/*=========================================MAIN=========================================*/
+.footer{
+    padding: 50px 0;
+
+    &__item {
+
+        @include media-breakpoint-down(xl){
+            display: flex;
+            flex-direction: column;
+            width: 50% !important;
+            justify-content: center !important;
+        }
+
+        @include media-breakpoint-down(sm){
+            width: 100% !important;
+        }
+
+        &-title{
+            @extend %text;
+            font-weight: 700;
+            color: #A3ADBA;
+            line-height: 32px;
+            letter-spacing: -0.4px;
+            padding-bottom: 10px;
+
+            @include media-breakpoint-down(xl){
+                padding-bottom: 0;
+            }
+        }
+
+        &-info{
+            @extend %text;
+            line-height: 20px;
+            letter-spacing: -0.4px;
+            color: #9EABBB;
+            text-align: left;
+
+            &_tel{
+                @extend %text;
+                color: $gray-700;
+                text-decoration: none;
+            }
+
+            &_email{
+                @extend %text;
+                color: $blue-light;
+                text-decoration: none;
+            }
+
+            &_shortlinks{
+                @extend %text;
+                color: #9EABBB;
+            }
+        }
+    }
+}
+
+.flex-wrapp{
+    @include media-breakpoint-down(xl){
+        width: 262px;
+        margin: 0 auto;
+        padding-bottom: 15px;
+    }
+
+    @include media-breakpoint-down(sm){
+        width: 305px;
+    }
+}
+/*======================================================================================*/
+
+
+/*========================================CONTENT=======================================*/
+
+/*======================================================================================*/
+
+
+/*=======================================COPYRIGHT======================================*/
+
+/*======================================================================================*/
