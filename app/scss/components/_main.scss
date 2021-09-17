@@ -718,6 +718,40 @@
     &__row{
         padding-top: 73px;
         padding-bottom: 77px;
+
+        @include media-breakpoint-down(lg){
+            padding-top: 48px;
+        }
+
+        @include media-breakpoint-down(lg){
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .col-md-5,
+        .col-md-2{
+            @include media-breakpoint-down(lg){
+                width: 100%;
+            }
+        }
+
+        .col-md-5:nth-child(1) {
+            @include media-breakpoint-down(lg){
+                order: 2;
+            }
+        }
+
+        .col-md-5:nth-child(2) {
+            @include media-breakpoint-down(lg){
+                order: 3;
+            }
+        }
+
+        .col-md-2{
+            @include media-breakpoint-down(lg){
+                order: 1;
+            }
+        }
     }
 
     &__title{
@@ -727,15 +761,35 @@
         letter-spacing: -0.4px;
         color: $blue-light;
         padding-top: 73px;
+
+        @include media-breakpoint-down(lg){
+            padding-top: 0;
+            padding-bottom: 20px;
+        }
+
+        @include media-breakpoint-down(sm){
+            font-size: 26px;
+        }
     }
 
     &__info{
         max-width: 420px;
 
+        @include media-breakpoint-down(lg){
+           margin: 0 auto;
+        }
+
         &-paragraph{
             @extend %text;
             letter-spacing: -0.4px;
             line-height: 32px;
+
+            @include media-breakpoint-down(sm){
+                font-size: 16px;
+                text-align: left;
+                max-width: 305px;
+                margin: 0 auto;
+            }
 
             &:nth-child(1) {
                 padding-bottom: 32px;
@@ -769,6 +823,12 @@
             box-shadow: 0px 1px 4px rgba(48, 67, 133, 0.5);
             border-radius: 12px !important;
 
+            @include media-breakpoint-down(sm){
+                width: 360px;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+
             &_image{
                 position: absolute;
                 top: 50%;
@@ -780,6 +840,11 @@
 
     &__logo{
         margin-top: 73px;
+
+        @include media-breakpoint-down(lg){
+            margin: 0 auto;
+            margin-bottom: 27px;
+        }
     }
 }
 /*======================================================================================*/
