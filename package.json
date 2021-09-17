@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://max-tsymba.github.io/test-frontend",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d app"
   },
   "author": "Max Tsymba",
   "license": "ISC",
@@ -28,6 +29,7 @@
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "babel-loader": "^8.2.2",
-    "bootstrap": "^5.1.1"
+    "bootstrap": "^5.1.1",
+    "gh-pages": "^3.2.3"
   }
 }
